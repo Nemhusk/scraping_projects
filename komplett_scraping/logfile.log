@@ -81,6 +81,7 @@ AttributeError: 'Komplett' object has no attribute 'price'
 2020-06-17 15:30:50,509 : INFO : __main__ : Got response from URL
 2020-06-17 15:30:50,560 : INFO : __main__ : Saving record...
 2020-06-17 15:30:50,561 : INFO : __main__ : Record saved
+<<<<<<< HEAD
 2020-07-15 18:00:21,855 : DEBUG : __main__ : Initiating instance of class "Komplett"
 2020-07-15 18:00:21,855 : DEBUG : __main__ : Category: gpu
 2020-07-15 18:00:21,855 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
@@ -123,3 +124,185 @@ AttributeError: 'Komplett' object has no attribute 'price'
 2020-07-15 18:08:54,096 : INFO : __main__ : Got response from URL
 2020-07-15 18:08:54,218 : INFO : __main__ : Saving record...
 2020-07-15 18:08:54,218 : INFO : __main__ : Record saved
+=======
+2020-07-05 23:58:57,654 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-05 23:58:57,654 : DEBUG : __main__ : Category: gpu
+2020-07-05 23:58:57,654 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
+2020-07-05 23:58:57,654 : INFO : __main__ : Getting response from URL...
+2020-07-05 23:58:57,966 : INFO : __main__ : Got response from URL
+2020-07-05 23:58:58,060 : INFO : __main__ : Saving record...
+2020-07-05 23:58:58,063 : INFO : __main__ : Record saved
+2020-07-05 23:58:58,064 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-05 23:58:58,064 : DEBUG : __main__ : Category: ssd
+2020-07-05 23:58:58,064 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
+2020-07-05 23:58:58,064 : INFO : __main__ : Getting response from URL...
+2020-07-05 23:58:58,348 : INFO : __main__ : Got response from URL
+2020-07-05 23:58:58,451 : INFO : __main__ : Saving record...
+2020-07-05 23:58:58,453 : INFO : __main__ : Record saved
+2020-07-05 23:58:58,453 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-05 23:58:58,454 : DEBUG : __main__ : Category: gpu
+2020-07-05 23:58:58,454 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-GeForce-RTX-2080-Ti-ROG-STRIX-OC-11GB-GDDR6-RAM-Grafikkort/2679518
+2020-07-05 23:58:58,454 : INFO : __main__ : Getting response from URL...
+2020-07-05 23:58:58,656 : INFO : __main__ : Got response from URl
+2020-07-05 23:58:58,780 : INFO : __main__ : Saving record...
+2020-07-05 23:58:58,784 : INFO : __main__ : Record saved
+2020-07-05 23:58:58,785 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-05 23:58:58,785 : DEBUG : __main__ : Category: ssd
+2020-07-05 23:58:58,785 : DEBUG : __main__ : URL: https://www.proshop.dk/SSD/Corsair-Force-MP600-NVMe-Gen4-M2-1TB/2779161
+2020-07-05 23:58:58,785 : INFO : __main__ : Getting response from URL...
+2020-07-05 23:58:58,939 : INFO : __main__ : Got response from URl
+2020-07-05 23:58:58,992 : INFO : __main__ : Saving record...
+2020-07-05 23:58:59,002 : INFO : __main__ : Record saved
+>>>>>>> 26dcf81699ebc23704045022a76e9f76b7dccaf8
+2020-07-15 18:23:04,110 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-15 18:23:04,110 : DEBUG : __main__ : Category: gpu
+2020-07-15 18:23:04,110 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
+2020-07-15 18:23:04,110 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:23:04,869 : INFO : __main__ : Got response from URL
+2020-07-15 18:23:04,971 : ERROR : __main__ : Failed in method "Komplett.get_info()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 36, in __init__
+    self.get_info()
+  File "komplett_scraping.py", line 99, in get_info
+    self.check_part_num()
+  File "komplett_scraping.py", line 60, in check_part_num
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:04,971 : INFO : __main__ : Saving record...
+2020-07-15 18:23:04,972 : ERROR : __main__ : Failed in method "Komplett.save_record()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 41, in __init__
+    self.save_record()
+  File "komplett_scraping.py", line 78, in save_record
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:04,972 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-15 18:23:04,972 : DEBUG : __main__ : Category: ssd
+2020-07-15 18:23:04,972 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
+2020-07-15 18:23:04,972 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:23:05,437 : INFO : __main__ : Got response from URL
+2020-07-15 18:23:05,535 : ERROR : __main__ : Failed in method "Komplett.get_info()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 36, in __init__
+    self.get_info()
+  File "komplett_scraping.py", line 99, in get_info
+    self.check_part_num()
+  File "komplett_scraping.py", line 60, in check_part_num
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:05,536 : INFO : __main__ : Saving record...
+2020-07-15 18:23:05,536 : ERROR : __main__ : Failed in method "Komplett.save_record()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 41, in __init__
+    self.save_record()
+  File "komplett_scraping.py", line 78, in save_record
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:05,536 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-15 18:23:05,536 : DEBUG : __main__ : Category: gpu
+2020-07-15 18:23:05,536 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-GeForce-RTX-2080-Ti-ROG-STRIX-OC-11GB-GDDR6-RAM-Grafikkort/2679518
+2020-07-15 18:23:05,536 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:23:05,843 : INFO : __main__ : Got response from URl
+2020-07-15 18:23:05,930 : ERROR : __main__ : Failed in method "Proshop.get_info()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 36, in __init__
+    self.get_info()
+  File "komplett_scraping.py", line 116, in get_info
+    self.check_part_num()
+  File "komplett_scraping.py", line 60, in check_part_num
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:05,931 : INFO : __main__ : Saving record...
+2020-07-15 18:23:05,931 : ERROR : __main__ : Failed in method "Proshop.save_record()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 41, in __init__
+    self.save_record()
+  File "komplett_scraping.py", line 78, in save_record
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:05,931 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-15 18:23:05,931 : DEBUG : __main__ : Category: ssd
+2020-07-15 18:23:05,931 : DEBUG : __main__ : URL: https://www.proshop.dk/SSD/Corsair-Force-MP600-NVMe-Gen4-M2-1TB/2779161
+2020-07-15 18:23:05,931 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:23:06,118 : INFO : __main__ : Got response from URl
+2020-07-15 18:23:06,187 : ERROR : __main__ : Failed in method "Proshop.get_info()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 36, in __init__
+    self.get_info()
+  File "komplett_scraping.py", line 116, in get_info
+    self.check_part_num()
+  File "komplett_scraping.py", line 60, in check_part_num
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:23:06,187 : INFO : __main__ : Saving record...
+2020-07-15 18:23:06,188 : ERROR : __main__ : Failed in method "Proshop.save_record()": Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 41, in __init__
+    self.save_record()
+  File "komplett_scraping.py", line 78, in save_record
+    data = json.load(json_file)
+  File "/usr/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
