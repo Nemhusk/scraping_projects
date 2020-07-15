@@ -306,3 +306,31 @@ Traceback (most recent call last):
   File "/usr/lib/python3.6/json/decoder.py", line 355, in raw_decode
     obj, end = self.scan_once(s, idx)
 json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 119 column 1 (char 4003)
+2020-07-15 18:24:48,660 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-15 18:24:48,660 : DEBUG : __main__ : Category: gpu
+2020-07-15 18:24:48,660 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
+2020-07-15 18:24:48,660 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:24:48,731 : INFO : __main__ : Got response from URL
+2020-07-15 18:24:48,835 : INFO : __main__ : Saving record...
+2020-07-15 18:24:48,836 : INFO : __main__ : Record saved
+2020-07-15 18:24:48,836 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-15 18:24:48,836 : DEBUG : __main__ : Category: ssd
+2020-07-15 18:24:48,836 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
+2020-07-15 18:24:48,836 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:24:48,898 : INFO : __main__ : Got response from URL
+2020-07-15 18:24:49,000 : INFO : __main__ : Saving record...
+2020-07-15 18:24:49,002 : INFO : __main__ : Record saved
+2020-07-15 18:24:49,002 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-15 18:24:49,002 : DEBUG : __main__ : Category: gpu
+2020-07-15 18:24:49,002 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-GeForce-RTX-2080-Ti-ROG-STRIX-OC-11GB-GDDR6-RAM-Grafikkort/2679518
+2020-07-15 18:24:49,002 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:24:49,254 : INFO : __main__ : Got response from URl
+2020-07-15 18:24:49,342 : INFO : __main__ : Saving record...
+2020-07-15 18:24:49,343 : INFO : __main__ : Record saved
+2020-07-15 18:24:49,344 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-15 18:24:49,344 : DEBUG : __main__ : Category: ssd
+2020-07-15 18:24:49,344 : DEBUG : __main__ : URL: https://www.proshop.dk/SSD/Corsair-Force-MP600-NVMe-Gen4-M2-1TB/2779161
+2020-07-15 18:24:49,344 : INFO : __main__ : Getting response from URL...
+2020-07-15 18:24:49,533 : INFO : __main__ : Got response from URl
+2020-07-15 18:24:49,606 : INFO : __main__ : Saving record...
+2020-07-15 18:24:49,607 : INFO : __main__ : Record saved
