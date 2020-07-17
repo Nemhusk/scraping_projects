@@ -668,3 +668,6 @@ AttributeError: 'Proshop' object has no attribute 'price'
 2020-07-17 08:00:06,563 : INFO : __main__ : Got response from URl
 2020-07-17 08:00:06,637 : INFO : __main__ : Saving record...
 2020-07-17 08:00:06,638 : INFO : __main__ : Record saved
+2020-07-17 08:00:06,690 : INFO : __main__ : Got response from URl
+2020-07-17 08:00:06,767 : INFO : __main__ : Saving record...
+2020-07-17 08:00:06,769 : INFO : __main__ : Record saved
