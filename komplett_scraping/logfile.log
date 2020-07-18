@@ -79,3 +79,32 @@ Traceback (most recent call last):
   File "komplett_scraping.py", line 79, in save_record
     data[self.cat][self.name][self.URL_domain]["dates"][self.date] = {"price": self.price}
 AttributeError: 'Proshop' object has no attribute 'price'
+2020-07-18 08:00:05,254 : INFO : __main__ : Saving record...
+2020-07-18 08:00:05,255 : INFO : __main__ : Record saved
+2020-07-18 08:00:05,255 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-18 08:00:05,255 : DEBUG : __main__ : Category: gpu
+2020-07-18 08:00:05,255 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-Radeon-RX-5700-XT-ROG-STRIX-OC-8GB-GDDR6-RAM-Grafikkort/2792486
+2020-07-18 08:00:05,256 : INFO : __main__ : Getting response from URL...
+2020-07-18 08:00:05,461 : INFO : __main__ : Got response from URl
+2020-07-18 08:00:05,538 : ERROR : __main__ : Failed in method "Proshop.get_info()": 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 110, in get_info
+    self.price = ''.join(self.html_soup.find('span', class_='site-currency-attention').text.strip('.-kr').split(',')[0].split('.'))
+AttributeError: 'NoneType' object has no attribute 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 36, in __init__
+    self.get_info()
+  File "komplett_scraping.py", line 113, in get_info
+    self.price = ''.join(self.html_soup.find('div', class_='site-currency-attention site-currency-campaign').text.replace('.', '').split(',')[0])
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-07-18 08:00:05,538 : INFO : __main__ : Saving record...
+2020-07-18 08:00:05,538 : ERROR : __main__ : Failed in method "Proshop.save_record()": 'Proshop' object has no attribute 'price'
+Traceback (most recent call last):
+  File "komplett_scraping.py", line 41, in __init__
+    self.save_record()
+  File "komplett_scraping.py", line 79, in save_record
+    data[self.cat][self.name][self.URL_domain]["dates"][self.date] = {"price": self.price}
+AttributeError: 'Proshop' object has no attribute 'price'
