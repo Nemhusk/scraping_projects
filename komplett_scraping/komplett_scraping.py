@@ -48,13 +48,8 @@ class Scraper:
         self.date = ''
         self.part_num = ''
 
-    def change_name(self):
-        if "asus geforce rtx 2080 ti rog strix oc" in self.name:
-            self.name = "asus geforce rtx 2080 ti rog strix oc"
-        elif "corsair" in self.name and "mp600" in self.name and "1tb" in self.name and "m.2" in self.name:
-            self.name = "corsair force mp600 1tb m.2"
-
     def check_part_num(self):
+        '''Checks if a product has a part number in the JSON-file, if it doesn't, it added to the JSON-file.'''
         changed = False
         with open('records.json', 'r') as json_file:
             data = json.load(json_file)
@@ -70,9 +65,11 @@ class Scraper:
                 json.dump(data, json_file, indent=4)
 
     def print_info(self):
+        '''Print info about the product in the terminal.'''
         print(f'Kategori: {self.cat}\nNavn: {self.name}\nPris: {self.price} kr.\nDato: {self.date}\nFra domain: {self.URL_domain}\nProdukt nummer: {self.part_num}\n')
 
     def save_record(self):
+        '''Save the price of the product in the JSON-file.'''
         logger.info('Saving record...')
         with open('records.json', 'r') as json_file:
             data = json.load(json_file)
@@ -82,6 +79,15 @@ class Scraper:
         logger.info('Record saved')
 
 
+def change_name(name):
+    '''Change the name of the product, so if a similiar product is also being scraped, the similar products goes under the same name.'''
+    if 'asus' in name and 'rtx' in name and '2080' in name and 'ti' in name and 'rog' in name and 'strix' in name and 'oc' in name:
+        name = 'asus geforce rtx 2080 ti rog strix oc'
+    elif 'corsair' in name and 'mp600' in name and '1tb' in name and 'm.2' in name:
+        name = 'corsair force mp600 1tb m.2'
+    return name
+
+
 class Komplett(Scraper):
     def get_info(self):
         logger.info('Getting response from URL...')
@@ -89,9 +95,9 @@ class Komplett(Scraper):
         logger.info('Got response from URL')
         self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
         self.name = self.html_soup.find('div', class_='product-main-info__info').h1.span.text.lower()
-        self.change_name()
+        self.name = change_name(self.name)
         # find price
-        self.price = ''.join(self.html_soup.find('span', class_='product-price-now').text.strip('.,-').split('.'))
+        self.price = self.html_soup.find('span', class_='product-price-now').text.strip(',-').replace('.', '')
         self.part_num = self.URL.split('/')[4]
         self.check_part_num()
         self.date = str(datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
@@ -104,14 +110,31 @@ class Proshop(Scraper):
         logger.info('Got response from URl')
         self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
         self.name = self.html_soup.find('div', class_='col-xs-12 col-sm-7').h1.text.lower()
-        self.change_name()
+        self.name = change_name(self.name)
         try:
             # find normal price
-            self.price = ''.join(self.html_soup.find('span', class_='site-currency-attention').text.strip('.-kr').split(',')[0].split('.'))
+            self.price = self.html_soup.find('span', class_='site-currency-attention').text.split(',')[0].replace('.', '')
         except AttributeError:
-            # find discount price
-            self.price = ''.join(self.html_soup.find('div', class_='site-currency-attention site-currency-campaign').text.replace('.', '').split(',')[0])
+            try:
+                # find discount price
+                self.price = self.html_soup.find('div', class_='site-currency-attention site-currency-campaign').text.split(',')[0].replace('.', '')
+            except AttributeError:
+                # if campaign is sold out (udsolgt)
+                self.price = self.html_soup.find('div', class_='site-currency-attention').text.split(',')[0].replace('.', '')
         self.part_num = self.html_soup.find('small', class_='col-xs-12 text-center').strong.text
+        self.check_part_num()
+        self.date = str(datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
+
+
+class Computersalg(Scraper):
+    def get_info(self):
+        self.response = requests.get(self.URL)
+        self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
+        self.name = self.html_soup.find('h1', itemprop='name').text.lower()
+        self.name = change_name(self.name)
+        # find price
+        self.price = self.html_soup.find('span', itemprop='price').text.strip().split(',')[0].replace('.', '')
+        self.part_num = self.URL.split('/')[4]
         self.check_part_num()
         self.date = str(datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
 
