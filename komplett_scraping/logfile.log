@@ -178,3 +178,42 @@ AttributeError: 'Proshop' object has no attribute 'price'
 2020-07-19 08:00:18,040 : INFO : __main__ : Record saved
 2020-07-19 08:00:18,050 : INFO : __main__ : Saving record...
 2020-07-19 08:00:18,051 : INFO : __main__ : Record saved
+2020-07-20 08:00:02,155 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-20 08:00:02,155 : DEBUG : __main__ : Category: gpu
+2020-07-20 08:00:02,155 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
+2020-07-20 08:00:02,155 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:02,271 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-20 08:00:02,271 : DEBUG : __main__ : Category: gpu
+2020-07-20 08:00:02,271 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
+2020-07-20 08:00:02,272 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:05,124 : INFO : __main__ : Got response from URL
+2020-07-20 08:00:05,224 : INFO : __main__ : Saving record...
+2020-07-20 08:00:05,226 : INFO : __main__ : Record saved
+2020-07-20 08:00:05,226 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-20 08:00:05,226 : DEBUG : __main__ : Category: ssd
+2020-07-20 08:00:05,226 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
+2020-07-20 08:00:05,226 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:06,580 : INFO : __main__ : Got response from URL
+2020-07-20 08:00:06,678 : INFO : __main__ : Saving record...
+2020-07-20 08:00:06,679 : INFO : __main__ : Record saved
+2020-07-20 08:00:06,679 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-20 08:00:06,679 : DEBUG : __main__ : Category: gpu
+2020-07-20 08:00:06,680 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-GeForce-RTX-2080-Ti-ROG-STRIX-OC-11GB-GDDR6-RAM-Grafikkort/2679518
+2020-07-20 08:00:06,680 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:07,069 : INFO : __main__ : Got response from URl
+2020-07-20 08:00:07,142 : INFO : __main__ : Saving record...
+2020-07-20 08:00:07,143 : INFO : __main__ : Record saved
+2020-07-20 08:00:07,143 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-20 08:00:07,143 : DEBUG : __main__ : Category: ssd
+2020-07-20 08:00:07,143 : DEBUG : __main__ : URL: https://www.proshop.dk/SSD/Corsair-Force-MP600-NVMe-Gen4-M2-1TB/2779161
+2020-07-20 08:00:07,143 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:07,330 : INFO : __main__ : Got response from URl
+2020-07-20 08:00:07,399 : INFO : __main__ : Saving record...
+2020-07-20 08:00:07,401 : INFO : __main__ : Record saved
+2020-07-20 08:00:07,401 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-20 08:00:07,401 : DEBUG : __main__ : Category: gpu
+2020-07-20 08:00:07,401 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-Radeon-RX-5700-XT-ROG-STRIX-OC-8GB-GDDR6-RAM-Grafikkort/2792486
+2020-07-20 08:00:07,401 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:07,597 : INFO : __main__ : Got response from URl
+2020-07-20 08:00:07,679 : INFO : __main__ : Saving record...
+2020-07-20 08:00:07,680 : INFO : __main__ : Record saved
