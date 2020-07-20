@@ -217,3 +217,34 @@ AttributeError: 'Proshop' object has no attribute 'price'
 2020-07-20 08:00:07,597 : INFO : __main__ : Got response from URl
 2020-07-20 08:00:07,679 : INFO : __main__ : Saving record...
 2020-07-20 08:00:07,680 : INFO : __main__ : Record saved
+2020-07-20 08:00:33,268 : INFO : __main__ : Got response from URL
+2020-07-20 08:00:33,372 : INFO : __main__ : Saving record...
+2020-07-20 08:00:33,373 : INFO : __main__ : Record saved
+2020-07-20 08:00:33,373 : DEBUG : __main__ : Initiating instance of class "Komplett"
+2020-07-20 08:00:33,373 : DEBUG : __main__ : Category: ssd
+2020-07-20 08:00:33,373 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
+2020-07-20 08:00:33,373 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:34,668 : INFO : __main__ : Got response from URL
+2020-07-20 08:00:34,767 : INFO : __main__ : Saving record...
+2020-07-20 08:00:34,769 : INFO : __main__ : Record saved
+2020-07-20 08:00:34,769 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-20 08:00:34,769 : DEBUG : __main__ : Category: gpu
+2020-07-20 08:00:34,769 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-GeForce-RTX-2080-Ti-ROG-STRIX-OC-11GB-GDDR6-RAM-Grafikkort/2679518
+2020-07-20 08:00:34,769 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:35,012 : INFO : __main__ : Got response from URl
+2020-07-20 08:00:35,085 : INFO : __main__ : Saving record...
+2020-07-20 08:00:35,087 : INFO : __main__ : Record saved
+2020-07-20 08:00:35,087 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-20 08:00:35,087 : DEBUG : __main__ : Category: ssd
+2020-07-20 08:00:35,087 : DEBUG : __main__ : URL: https://www.proshop.dk/SSD/Corsair-Force-MP600-NVMe-Gen4-M2-1TB/2779161
+2020-07-20 08:00:35,087 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:35,303 : INFO : __main__ : Got response from URl
+2020-07-20 08:00:35,374 : INFO : __main__ : Saving record...
+2020-07-20 08:00:35,376 : INFO : __main__ : Record saved
+2020-07-20 08:00:35,376 : DEBUG : __main__ : Initiating instance of class "Proshop"
+2020-07-20 08:00:35,376 : DEBUG : __main__ : Category: gpu
+2020-07-20 08:00:35,376 : DEBUG : __main__ : URL: https://www.proshop.dk/Grafikkort/ASUS-Radeon-RX-5700-XT-ROG-STRIX-OC-8GB-GDDR6-RAM-Grafikkort/2792486
+2020-07-20 08:00:35,376 : INFO : __main__ : Getting response from URL...
+2020-07-20 08:00:35,578 : INFO : __main__ : Got response from URl
+2020-07-20 08:00:35,660 : INFO : __main__ : Saving record...
+2020-07-20 08:00:35,661 : INFO : __main__ : Record saved
