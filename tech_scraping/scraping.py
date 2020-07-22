@@ -207,8 +207,4 @@ if __name__ == '__main__':
     Komplett('ssd', 'https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#')
     Proshop('gpu', 'https://www.proshop.dk/Grafikkort/ASUS-GeForce-RTX-2080-Ti-ROG-STRIX-OC-11GB-GDDR6-RAM-Grafikkort/2679518')
     Proshop('ssd', 'https://www.proshop.dk/SSD/Corsair-Force-MP600-NVMe-Gen4-M2-1TB/2779161')
-<<<<<<< HEAD
     Proshop('gpu', 'https://www.proshop.dk/Grafikkort/ASUS-Radeon-RX-5700-XT-ROG-STRIX-OC-8GB-GDDR6-RAM-Grafikkort/2792486')
-=======
-    Proshop('gpu', 'https://www.proshop.dk/Grafikkort/ASUS-Radeon-RX-5700-XT-ROG-STRIX-OC-8GB-GDDR6-RAM-Grafikkort/2792486')
->>>>>>> 8bad7f4d7c985b525cd4e336ff19fb2ca10e5742
