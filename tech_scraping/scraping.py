@@ -33,6 +33,12 @@ class Scraper:
         self.URL_domain = self.URL.split('/')[2]
         logger.debug(f'Category: {self.cat}')
         logger.debug(f'URL: {self.URL}')
+
+        try:
+            self.get_response()
+        except Exception as err:
+            logger.error(f'Failed in method "{self.__class__.__name__}.get_response()": {err}', exc_info=True)
+
         try:
             self.get_info()
         except Exception as err:
@@ -54,6 +60,11 @@ class Scraper:
         self.price = ''
         self.date = ''
 
+    def get_response(self):
+        logger.info('Getting response from URL...')
+        self.response = requests.get(self.URL)
+        logger.info('Got response from URL')
+
     def get_part_num(self):
         '''Get part number from URL or from HTML.'''
         self.part_num = ''
@@ -72,13 +83,16 @@ class Scraper:
         changed = False
         with open('records.json', 'r') as json_file:
             data = json.load(json_file)
-            part_num_from_data = data[self.cat][self.name][self.URL_domain]['info']['part_num']
-            if part_num_from_data == '':
-                data[self.cat][self.name][self.URL_domain]['info']['part_num'] = self.part_num
-                changed = True
-            elif not self.part_num == part_num_from_data:
-                data[self.cat][self.name][self.URL_domain]['info']['part_num_2'] = self.part_num
-                changed = True
+        
+        part_num_from_data = data[self.cat][self.name][self.URL_domain]['info']['part_num']
+        
+        if part_num_from_data == '':
+            data[self.cat][self.name][self.URL_domain]['info']['part_num'] = self.part_num
+            changed = True
+        elif not self.part_num == part_num_from_data:
+            data[self.cat][self.name][self.URL_domain]['info']['part_num_2'] = self.part_num
+            changed = True
+        
         if changed:
             with open('records.json', 'w') as json_file:
                 json.dump(data, json_file, indent=4)
@@ -89,13 +103,16 @@ class Scraper:
         changed = False
         with open('records.json', 'r') as json_file:
             data = json.load(json_file)
-            url_from_data = data[self.cat][self.name][self.URL_domain]['info']['url']
-            if url_from_data == '':
-                data[self.cat][self.name][self.URL_domain]['info']['url'] = self.short_url
-                changed = True
-            elif not self.short_url == url_from_data:
-                data[self.cat][self.name][self.URL_domain]['info']['url_2'] = self.short_url
-                changed = True
+        
+        url_from_data = data[self.cat][self.name][self.URL_domain]['info']['url']
+        
+        if url_from_data == '':
+            data[self.cat][self.name][self.URL_domain]['info']['url'] = self.short_url
+            changed = True
+        elif not self.short_url == url_from_data:
+            data[self.cat][self.name][self.URL_domain]['info']['url_2'] = self.short_url
+            changed = True
+        
         if changed:
             with open('records.json', 'w') as json_file:
                 json.dump(data, json_file, indent=4)
@@ -147,9 +164,6 @@ def change_name(name):
 
 class Komplett(Scraper):
     def get_info(self):
-        logger.info('Getting response from URL...')
-        self.response = requests.get(self.URL)
-        logger.info('Got response from URL')
         self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
         self.name = self.html_soup.find('div', class_='product-main-info__info').h1.span.text.lower()
         self.name = change_name(self.name)
@@ -160,9 +174,6 @@ class Komplett(Scraper):
 
 class Proshop(Scraper):
     def get_info(self):
-        logger.info('Getting response from URL...')
-        self.response = requests.get(self.URL)
-        logger.info('Got response from URl')
         self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
         self.name = self.html_soup.find('div', class_='col-xs-12 col-sm-7').h1.text.lower()
         self.name = change_name(self.name)
@@ -181,7 +192,6 @@ class Proshop(Scraper):
 
 class Computersalg(Scraper):
     def get_info(self):
-        self.response = requests.get(self.URL)
         self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
         self.name = self.html_soup.find('h1', itemprop='name').text.lower()
         self.name = change_name(self.name)
@@ -192,7 +202,6 @@ class Computersalg(Scraper):
 
 class Elgiganten(Scraper):
     def get_info(self):
-        self.response = requests.get(self.URL)
         self.html_soup = BeautifulSoup(self.response.text, 'html.parser')
         self.name = self.html_soup.find('h1', class_='product-title').text.lower()
         self.name = change_name(self.name)
