@@ -1298,3 +1298,8 @@ AttributeError: 'Proshop' object has no attribute 'price'
 2020-08-26 08:00:04,401 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
 2020-08-26 08:00:04,401 : INFO : __main__ : Getting response from URL...
 2020-08-26 08:00:06,381 : INFO : __main__ : Got response from URL
+2020-08-27 08:00:02,945 : DEBUG : __main__ : Initiating class "Komplett"
+2020-08-27 08:00:02,965 : DEBUG : __main__ : Category: gpu
+2020-08-27 08:00:02,965 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1103205/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix-oc#
+2020-08-27 08:00:02,965 : INFO : __main__ : Getting response from URL...
+2020-08-27 08:00:04,832 : INFO : __main__ : Got response from URL
