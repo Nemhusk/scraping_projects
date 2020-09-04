@@ -445,7 +445,19 @@
           },
           "2020-09-01": {
             "price": "3399"
+<<<<<<< HEAD
 >>>>>>> 4a6c11cf7f5d18f9a1f3eb41d70e2c9937dac23c
+=======
+          },
+          "2020-09-02": {
+            "price": "3399"
+          },
+          "2020-09-03": {
+            "price": "3399"
+          },
+          "2020-09-04": {
+            "price": "3399"
+>>>>>>> 0be1f60108a38cc2dce7626530a84d1f9287bd17
           }
         }
       }
@@ -454,7 +466,8 @@
       "www.komplett.dk": {
         "info": {
           "part_num": "1103205",
-          "url": "https://www.komplett.dk/product/1103205"
+          "url": "https://www.komplett.dk/product/1103205",
+          "extra-info": "Until 2020-09-03 the tracked price was for the OC-edition of the ASUS 2080 ti ROG Strix, but after that date it's the non OC-edition"
         },
         "dates": {
           "2020-06-08": {
@@ -672,6 +685,16 @@
           },
           "2020-09-01": {
             "price": "10629"
+          },
+          "2020-09-02": {
+            "price": "10874"
+          },
+          "2020-09-03": {
+            "price": "10449",
+            "info": "OC-edition no longer available (product number: 1103205). Non-OC-edition product number is 1116464 and the pricing for this date is the non OC-edition"
+          },
+          "2020-09-04": {
+            "price": "10449"
           }
         }
       },
@@ -2081,7 +2104,17 @@
             "price": "10629"
           },
           "2020-09-01": {
-            "price": "10579"
+            "price": "10579",
+            "info": "with RTX Rainbow Six Siege Bundle"
+          },
+          "2020-09-02": {
+            "price": "10966"
+          },
+          "2020-09-03": {
+            "price": "10966"
+          },
+          "2020-09-04": {
+            "price": "10966"
           }
         }
       }
@@ -2307,7 +2340,19 @@
           },
           "2020-09-01": {
             "price": "1891"
+<<<<<<< HEAD
 >>>>>>> 4a6c11cf7f5d18f9a1f3eb41d70e2c9937dac23c
+=======
+          },
+          "2020-09-02": {
+            "price": "1891"
+          },
+          "2020-09-03": {
+            "price": "1891"
+          },
+          "2020-09-04": {
+            "price": "1891"
+>>>>>>> 0be1f60108a38cc2dce7626530a84d1f9287bd17
           }
         }
       },
@@ -2612,9 +2657,22 @@
             "price": "1529"
           },
           "2020-09-01": {
+<<<<<<< HEAD
             "price": "1529",
             "info": "with RTX Rainbow Six Siege Bundle"
 >>>>>>> 4a6c11cf7f5d18f9a1f3eb41d70e2c9937dac23c
+=======
+            "price": "1529"
+          },
+          "2020-09-02": {
+            "price": "1494"
+          },
+          "2020-09-03": {
+            "price": "1528"
+          },
+          "2020-09-04": {
+            "price": "1508"
+>>>>>>> 0be1f60108a38cc2dce7626530a84d1f9287bd17
           }
         }
       }
