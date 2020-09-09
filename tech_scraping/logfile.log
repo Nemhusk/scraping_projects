@@ -1370,3 +1370,8 @@ AttributeError: 'NoneType' object has no attribute 'text'
 2020-09-08 08:00:02,878 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1116464/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix
 2020-09-08 08:00:02,878 : INFO : __main__ : Getting response from URL...
 2020-09-08 08:00:04,777 : INFO : __main__ : Got response from URL
+2020-09-09 08:00:04,016 : DEBUG : __main__ : Initiating class "Komplett"
+2020-09-09 08:00:04,034 : DEBUG : __main__ : Category: gpu
+2020-09-09 08:00:04,034 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1116464/hardware/pc-komponenter/grafikkort/asus-geforce-rtx-2080-ti-rog-strix
+2020-09-09 08:00:04,034 : INFO : __main__ : Getting response from URL...
+2020-09-09 08:00:05,342 : INFO : __main__ : Got response from URL
