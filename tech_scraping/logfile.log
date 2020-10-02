@@ -1492,3 +1492,8 @@ AttributeError: 'NoneType' object has no attribute 'text'
 2020-10-01 08:00:02,293 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
 2020-10-01 08:00:02,293 : INFO : __main__ : Getting response from URL...
 2020-10-01 08:00:03,336 : INFO : __main__ : Got response from URL
+2020-10-02 08:00:03,762 : DEBUG : __main__ : Initiating class "Komplett"
+2020-10-02 08:00:03,787 : DEBUG : __main__ : Category: ssd
+2020-10-02 08:00:03,787 : DEBUG : __main__ : URL: https://www.komplett.dk/product/1133452/hardware/lagring/harddiskssd/ssd-m2/corsair-force-series-mp600-1tb-m2-ssd#
+2020-10-02 08:00:03,787 : INFO : __main__ : Getting response from URL...
+2020-10-02 08:00:05,671 : INFO : __main__ : Got response from URL
